@@ -1,10 +1,3 @@
-winrt::build!(
-    dependencies
-        os
-    types
-        windows::data::xml::dom::*
-);
-
 fn main() {
-    build();
+    windows::build!(windows::data::xml::dom::XmlDocument);
 }
