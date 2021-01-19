@@ -1,13 +1,10 @@
-use bindings::*;
-use windows::graphics::imaging::*;
-use windows::media::ocr::*;
-use windows::storage::*;
+use bindings::{windows::graphics::imaging::*, windows::media::ocr::*, windows::storage::*};
 
-fn main() -> winrt::Result<()> {
+fn main() -> windows::Result<()> {
     futures::executor::block_on(main_async())
 }
 
-async fn main_async() -> winrt::Result<()> {
+async fn main_async() -> windows::Result<()> {
     let mut message = std::env::current_dir().unwrap();
     message.push("message.png");
 

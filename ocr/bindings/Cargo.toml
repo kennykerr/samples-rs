@@ -5,10 +5,7 @@ authors = ["Kenny Kerr <kenny.kerr@microsoft.com>"]
 edition = "2018"
 
 [dependencies]
-winrt = "0.7.2"
+windows = { git = "https://github.com/microsoft/windows-rs" }
 
 [build-dependencies]
-winrt = "0.7.2"
-
-[package.metadata.winrt.dependencies]
-"Microsoft.Windows.SDK.Contracts" = "10.0.19041.1"
+windows = { git = "https://github.com/microsoft/windows-rs" }

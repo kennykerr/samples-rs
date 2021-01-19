@@ -5,6 +5,6 @@ authors = ["Kenny Kerr <kenny.kerr@microsoft.com>"]
 edition = "2018"
 
 [dependencies]
-futures = "0.3.5"
-winrt = "0.7.2"
+windows = { git = "https://github.com/microsoft/windows-rs" }
 bindings = { path = "bindings" }
+futures = "0.3.5"
