@@ -7,3 +7,5 @@ This repo contains a few sample projects to get you started with [Rust for the W
 [message_box](message_box) - An example using the age-old [MessageBox](https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-messagebox) function.
 
 [event](event) - An example using the kernel [event object](https://docs.microsoft.com/en-us/windows/win32/api/synchapi/nf-synchapi-createeventa).
+
+[enum_window](enum_window) - An example of using the [EnumWindows](https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-enumwindows) function.
