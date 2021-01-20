@@ -3,10 +3,8 @@ use bindings::{
     windows::win32::menu_rc::{EnumWindows, GetWindowTextW},
 };
 
-fn main() {
-    unsafe {
-        EnumWindows(Some(enum_window), LPARAM(0));
-    }
+fn main() -> windows::Result<()> {
+    unsafe { EnumWindows(Some(enum_window), LPARAM(0)).ok() }
 }
 
 extern "system" fn enum_window(window: HWND, _: LPARAM) -> BOOL {
