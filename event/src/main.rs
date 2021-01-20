@@ -1,6 +1,6 @@
 use bindings::{
-    windows::win32::backup::{CreateEventW, SetEvent, WaitForSingleObject},
-    windows::win32::win_prog::CloseHandle,
+    windows::win32::system_services::{CreateEventW, SetEvent, WaitForSingleObject},
+    windows::win32::windows_programming::CloseHandle,
 };
 
 fn main() -> windows::Result<()> {
