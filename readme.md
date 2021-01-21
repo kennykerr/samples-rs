@@ -1,4 +1,4 @@
-This repo contains a few sample projects to get you started with [Rust for the Windows API](https://github.com/microsoft/windows-rs).
+This repo contains a few sample projects to get you started with [Rust for Windows](https://github.com/microsoft/windows-rs).
 
 [create_window](create_window) - An example of creating a desktop window with [CreateWindowExA](https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-createwindowexa) and friends.
 
