@@ -10,4 +10,6 @@ This repo contains a few sample projects to get you started with [Rust for Windo
 
 [ocr](ocr) - An example using the [Windows.Graphics.Imaging](https://docs.microsoft.com/en-us/uwp/api/Windows.Graphics.Imaging), [Windows.Media.Ocr](https://docs.microsoft.com/en-us/uwp/api/Windows.Media.Ocr), and [Windows.Storage](https://docs.microsoft.com/en-us/uwp/api/Windows.Storage) APIs to convert an image into text.
 
+[win2d](win2d) - An example using dependencies like [Win2D](https://www.nuget.org/packages/Win2D.uwp) where that component provides its own winmd for describing its API surface as well as a runtime DLL that must be deployed with the app. It is further complicated as Win2D requires the [VCRTForwarders](https://www.nuget.org/packages/Microsoft.VCRTForwarders.140/) in order to load. 
+
 [xml](xml) - An example of using the [Windows.Data.Xml.Dom](https://docs.microsoft.com/en-us/uwp/api/Windows.Data.Xml.Dom) API for parsing XML.
