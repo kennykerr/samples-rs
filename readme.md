@@ -4,6 +4,8 @@ This repo contains a few sample projects to get you started with [Rust for Windo
 
 [clock](clock) - An example of using [Direct2D](https://docs.microsoft.com/en-us/windows/win32/direct2d/direct2d-overview) and various other Windows APIs.
 
+![clock](https://user-images.githubusercontent.com/9845234/106089513-ef5f3d80-60dc-11eb-9aee-f89d2416f341.gif)
+
 ## create_window
 
 [create_window](create_window) - A simple example of creating a desktop window with [CreateWindowExA](https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-createwindowexa) and friends.
