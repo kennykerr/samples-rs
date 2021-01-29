@@ -1,9 +1,10 @@
 use bindings::{
     windows::win32::system_services::{CreateEventW, SetEvent, WaitForSingleObject},
     windows::win32::windows_programming::CloseHandle,
+    windows::Result,
 };
 
-fn main() -> windows::Result<()> {
+fn main() -> Result<()> {
     unsafe {
         let event = CreateEventW(
             std::ptr::null_mut(),

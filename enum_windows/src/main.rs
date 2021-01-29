@@ -1,10 +1,13 @@
-use bindings::windows::win32::windows_and_messaging::{EnumWindows, GetWindowTextW, HWND, LPARAM};
+use bindings::{
+    windows::win32::windows_and_messaging::{EnumWindows, GetWindowTextW, HWND, LPARAM},
+    windows::{Result, BOOL},
+};
 
-fn main() -> windows::Result<()> {
+fn main() -> Result<()> {
     unsafe { EnumWindows(Some(enum_window), LPARAM(0)).ok() }
 }
 
-extern "system" fn enum_window(window: HWND, _: LPARAM) -> windows::BOOL {
+extern "system" fn enum_window(window: HWND, _: LPARAM) -> BOOL {
     unsafe {
         let mut text: [u16; 512] = [0; 512];
         let len = GetWindowTextW(window, text.as_mut_ptr(), text.len() as i32);
