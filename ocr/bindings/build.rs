@@ -1,7 +1,7 @@
 fn main() {
     windows::build!(
-            windows::storage::streams::*
-            windows::graphics::imaging::*
-            windows::media::ocr::*
+        windows::graphics::imaging::BitmapDecoder,
+        windows::media::ocr::OcrEngine,
+        windows::storage::StorageFile,
     );
 }

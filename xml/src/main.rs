@@ -1,6 +1,6 @@
-use bindings::windows::data::xml::dom::XmlDocument;
+use bindings::{windows::data::xml::dom::XmlDocument, windows::Result};
 
-fn main() -> windows::Result<()> {
+fn main() -> Result<()> {
     let doc = XmlDocument::new()?;
     doc.load_xml("<html>hello world</html>")?;
 

@@ -3,13 +3,8 @@ use bindings::{
     windows::win32::direct3d11::*, windows::win32::dxgi::*, windows::win32::gdi::*,
     windows::win32::menus_and_resources::*, windows::win32::system_services::*,
     windows::win32::ui_animation::*, windows::win32::upnp::*,
-    windows::win32::windows_and_messaging::*, windows::win32::windows_programming::*,
+    windows::win32::windows_and_messaging::*, windows::win32::windows_programming::*, windows::*,
 };
-
-use windows::Abi;
-use windows::ErrorCode;
-use windows::Interface;
-use windows::Result;
 
 fn main() -> Result<()> {
     unsafe {

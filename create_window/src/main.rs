@@ -9,9 +9,10 @@ use bindings::{
         CreateWindowExA, DefWindowProcA, DispatchMessageA, GetMessageA, PostQuitMessage,
         RegisterClassA, HWND, LPARAM, MSG, WNDCLASSA, WPARAM,
     },
+    windows::Result,
 };
 
-fn main() -> windows::Result<()> {
+fn main() -> Result<()> {
     unsafe {
         let instance = HINSTANCE(GetModuleHandleA(std::ptr::null()));
         debug_assert!(instance.0 != 0);
