@@ -5,5 +5,5 @@ authors = ["Kenny Kerr <kenny.kerr@microsoft.com>"]
 edition = "2018"
 
 [dependencies]
-bindings = { path = "bindings" }
+bindings = { package = "ocr_bindings", path = "bindings" }
 futures = "0.3.5"

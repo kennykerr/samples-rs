@@ -1,0 +1,11 @@
+[workspace]
+members = [
+    "clock",
+    "create_window",
+    "enum_windows",
+    "event",
+    "message_box",
+    "ocr",
+    "win2d",
+    "xml",
+]
